@@ -16,4 +16,4 @@ En el archivo urls.py -> importamos la view 'index' y luego en la seccion paths 
 Ejecutamos el comando: 'python manage.py migrate'
 Para ver cuales son los comandos que puedo utilizar con el manage.py ->'python manage.py help'
 Para correr el servidor ejecutamos -> 'python manage.py runserver'
-Y para ver el path que agregamos, a la direccion que nos brinda la cmd , le agregamos el path que queremos visualizar
+Y para ver el path que agregamos, a la direccion que nos brinda la cmd (127.0.0....etc), le agregamos el path que queremos visualizar
