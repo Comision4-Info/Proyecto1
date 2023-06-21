@@ -1,0 +1,18 @@
+Crear una carpeta llamada 'Proyecto'
+-Dentro de Proyecto -> Creamos la carpeta 'Entornos'
+Abrimos una CMD -> y ejecutamos el comando 'pip install virtualenv'
+- Dentro de la CMD nos movemos a la carpeta 'Entornos'
+Ejecutamos: 'python -m virtualenv .venv_proyecto1'
+Para activar el entorno '.venv_proyecto1\Scripts\activate' #Ruta hacia el archivo activate
+Con el entorno activado: pip install django # Si quiero una version distinta, django==<version>
+Dentro de la carpeta 'Proyecto' ejecutamos -> django-admin startproject <nombre_del_proyecto>
+Creamos en la carpeta Proyecto1 -> views.py -> funcion index(request)
+En la base del proyecto(Proyecto1) creamos una carpeta 'templates'
+Y dentro de esa carpeta crearemos un archivo llamado 'index.html' -> Hola desde el index!
+Para configurar la ubicacion de la carpeta templates -> settings.py -> TEMPLATES : "DIRS": [ BASE_DIR / "templates"]
+Creamos en la base del proyecto un archivo 'db.sqlite3'
+En el archivo urls.py -> importamos la view 'index' y luego en la seccion paths -> path("index/",index),
+Ejecutamos el comando: 'python manage.py migrate'
+Para ver cuales son los comandos que puedo utilizar con el manage.py ->'python manage.py help'
+Para correr el servidor ejecutamos -> 'python manage.py runserver'
+Y para ver el path que agregamos, a la direccion que nos brinda la cmd , le agregamos el path que queremos visualizar
