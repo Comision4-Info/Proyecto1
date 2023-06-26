@@ -17,3 +17,16 @@ Ejecutamos el comando: 'python manage.py migrate'
 Para ver cuales son los comandos que puedo utilizar con el manage.py ->'python manage.py help'
 Para correr el servidor ejecutamos -> 'python manage.py runserver'
 Y para ver el path que agregamos, a la direccion que nos brinda la cmd (127.0.0....etc), le agregamos el path que queremos visualizar
+Creamos una carpeta llamada apps
+Para iniciar una app, dentro del directorio apps, con el entorno activado -> django-admin startapp <nombre de la app>
+En el archivo settings -> INSTALLED_APPS = [...., "apps.<nombre de la app>"]
+Creamos carpeta media 
+Creamos carpeta static
+Creamos dentro de templates -> base.html
+-> index.html -> extendemos base.html
+views.index -> agregamos un contexto
+index-> generamos un for y mostramos los datos en etiquetas <p>
+Para crear el superusuario -> python manage.py createsuperuser #La contraseña no se muestra al escribirla
+Para acceder al panel admin de django-> runserver y localhost:8000/admin
+Creamos el archivo navbar.html -> copiamos de bootstrap algún navbar y lo pegamos acá
+En index -> {% include 'navbar.html' %} #Dentro de la etiqueta de bloque 
